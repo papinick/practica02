@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el primer navbar */
+  .navbar {
+    background-color: #4a50a1;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .title {
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el desplegable "Marcas" */
+  .navbar .dropdown {
+    position: relative;
+  }
+  
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0303da;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 250%;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar .dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .dropdown-btn:hover {
+    color: #ffcc00;
+  }
+  
+  .navbar .dropdown-content a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar .theme-toggle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+  
+  .navbar #light-mode-btn,
+  .navbar #dark-mode-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el nuevo navbar */
+  #navbar-bottom {
+    background-color: #0e0bc9;
+    margin-top: 1px;
+  }
+  
+  #navbar-bottom .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar-bottom .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 800px;
+    padding-left: -10px;
+    margin-left: -150px;
+  }
+  
+  #navbar-bottom .inter-cell {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    color: white;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  #navbar-bottom .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: -950px; /* Ajusta el margen derecho */
+  }
+  
+  #navbar-bottom .search-bar input[type="text"] {
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    width: 400px;
+  }
+  
+  #navbar-bottom .search-bar button {
+    background-color: #4a50a1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  #navbar-bottom .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: -0px;
+  }
+  
+  .notification-wrapper {
+    margin-right: -180px; /* Mueve el botón de notificaciones a la izquierda */
+  }
+  
+  .notification-btn {
+    position: relative;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  
+  .notification-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgb(4, 8, 233);
+    border: 1px solid #043cf5;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notification-btn:hover .notification-dropdown {
+    display: block;
+  }
+  
+  .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #2760ca;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item:hover {
+    background-color: #2760ca;
+  }
